@@ -12,11 +12,11 @@
     <h3>About the Author</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum expedita iure quam ab praesentium nihil, molestiae enim quas modi necessitatibus soluta voluptates quis perspiciatis aperiam ipsam cupiditate ullam. Aliquid.</p>
     <h3>Image</h3>
-    <img src="./1-Harry-Potter-and-the-Cursed-Child.jpg" width="30%">
-    <img src="./OIP (1).jpg" alt="Harry Potter and cursed Child" width="30%">
+    <img src="./1-Harry-Potter-and-the-Cursed-Child.jpg" width="30%" height="40%">
+    <img src="./OIP (1).jpg" alt="Harry Potter and cursed Child" width="30%" height="40%">
     <img src="./11. The Australian company of Harry Potter and the Cursed Child. Photo Matt Murphy._2842.jpg" width="30%">
     <br>
-    <button onclick="https://www.london-theater-tickets.com/harry-potter-and-the-cursed-child-tickets/">BOOK NOW</button>
+    <button onclick="window.open('https://www.london-theater-tickets.com/harry-potter-and-the-cursed-child-tickets/', '_blank');">Click Me</button>
     <br><br>
 
     <!--table-->
@@ -74,6 +74,7 @@
         <li>Dragon heartstring wand</li>
         <li>unicorn hair wand</li>
     </ol>
+    <br>
 
     <u><h3>Groups in Harry Potter</h3></u>    
     <dl>
@@ -101,7 +102,54 @@
         <dd>
             Known for ambition,cunning and resourecefulness
         </dd>
-
     </dl>
+
+    <!--form-->
+    <br>
+    <u><h3>Become a Harry Potter Fan</h3></u><br>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="emaiil" id="email"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other">        
+        <label for="other">Other</label><br><br>
+
+
+        <label for="fav">Favourite Book:</label>
+        <select name="book" id="fav">
+            <option value="philosopher's stone">Harry Potter and Philosopher's stone</option>
+            <option value="chamber of secrets">Harry Potter and chamber of secrets</option>
+            <option value="goblet of fire">Harry Potter and the Goblet of fire</option>
+        </select>
+        <br><br>
+
+        <label for="profile">Profile Picture:</label>
+        <input type="file" name="file" id="profile"><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" id="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" name="hobbies" id="writing">
+        <label for="writing">Writing</label><br>
+        <input type="checkbox" name="hobbies" id="drawing">
+        <label for="drawing">Drawing</label><br>
+        <input type="checkbox" name="hobbies" id="cosplaying">
+        <label for="cosplaying">Cosplay</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>
